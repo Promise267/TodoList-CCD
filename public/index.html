@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-10 rounded-lg shadow-md">
+
+        <p class="text-4xl font-bold mb-4 text-white text-center">Todo List</p>
+        <input type="text" id="itemInput" class="px-4 py-2" placeholder="Enter item">
+        <button id="addItemBtn" class="bg-white text-blue-500 hover:bg-orange-500 hover:text-black px-4 py-2 rounded focus:outline-none transition-opacity duration-300 ease-in-out">Add</button>
+        <ul id="itemList"></ul>
+    
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

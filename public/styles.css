@@ -1,0 +1,29 @@
+body{
+  background-image: url("https://assets.codepen.io/1462889/back-page.svg");
+}
+
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.form-checkbox:checked + .checkmark {
+  background-color: #ff7e5f; /* Orange color */
+}
+
+.form-checkbox:checked + .checkmark:after {
+  content: '\2713'; /* Unicode character for a checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #000;
+}
